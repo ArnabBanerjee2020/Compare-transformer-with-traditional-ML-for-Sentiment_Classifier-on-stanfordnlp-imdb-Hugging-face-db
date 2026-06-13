@@ -1,6 +1,37 @@
 # Fine-Tuned-BERT-for-Sentiment_Classifier-on-stanfordnlp-imdb-from-Hugging-face
 Using the Hugging Face IMDb dataset to make comparison between transformers.
 
+## What is BERT?
+
+BERT stands for Bidirectional Encoder Representations from Transformers.
+It is a pre-trained Natural Language Processing (NLP) model developed by Google in 2018.
+The main purpose of BERT is to understand the meaning and context of human language. Instead of processing words individually, BERT learns relationships between words in a sentence and generates contextual representations (embeddings) that can be used for tasks such as:
+Sentiment Analysis
+Text Classification
+Question Answering
+Named Entity Recognition (NER)
+Text Summarization
+
+## What Makes "Bidirectional" So Special?
+
+Before BERT, many language models read text in only one direction.
+Traditional Left-to-Right Processing
+Consider:
+The movie was not good.
+A left-to-right model predicts each word using only previous words:
+The → movie → was → not → good
+When processing "good", it knows the word "not" came before it.
+However, for many language understanding tasks, a word's meaning depends on both sides of the sentence.
+
+## Why BERT?
+
+Unlike LSTMs which process text sequentially (token by token), 
+BERT reads the entire sentence at once using self-attention — 
+every token can directly attend to every other token. This means 
+"not good" is understood differently from "good", because BERT 
+sees the negation in full context. For sentiment analysis on long 
+movie reviews, this bidirectional context is crucial.
+
 The first code is on fine-tuning a BERT transformer for a sentiment classifier on standfordnlp-imdb dataset from Hugging Face,
 using T4 GPU from Google Colab to tune the BERT model on text datasets
 
