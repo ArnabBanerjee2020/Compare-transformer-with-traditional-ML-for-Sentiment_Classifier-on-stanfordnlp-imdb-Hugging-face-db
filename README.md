@@ -3,6 +3,7 @@ Using the Hugging Face IMDb dataset to make comparison between transformers.
 
 The first code is on fine-tuning a BERT transformer for a sentiment classifier on standfordnlp-imdb dataset from Hugging Face,
 using T4 GPU from Google Colab to tune the BERT model on text datasets
+
 in which the model training accuracy obtained is 
 
 <img width="747" height="207" alt="image" src="https://github.com/user-attachments/assets/5ffec75e-7529-45e0-9f52-c963b09941e2" />
