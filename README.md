@@ -32,7 +32,7 @@ every token can directly attend to every other token. This means
 sees the negation in full context. For sentiment analysis on long 
 movie reviews, this bidirectional context is crucial.
 
-The first code is on fine-tuning a BERT transformer for a sentiment classifier on standfordnlp-imdb dataset from Hugging Face,
+The first code (1.1 and 1.2) is on fine-tuning a BERT transformer for a sentiment classifier on the StanfordNLP-IMDb dataset from Hugging Face,
 using T4 GPU from Google Colab to tune the BERT model on text datasets
 
 in which the model training accuracy obtained is 
@@ -51,3 +51,13 @@ Custom test report
 
 <img width="390" height="296" alt="image" src="https://github.com/user-attachments/assets/6aa08164-e481-4f4c-adee-7adad2636808" />
 
+IN code 2.1 and 2.2 i have did a compation between Fine tune BERT and (Tf-IDS + Logistic Regression) Model, where i obtained that on custome dataset 
+
+<img width="737" height="157" alt="image" src="https://github.com/user-attachments/assets/8ab6a95e-f6cd-4170-95ba-1aa6d6fdb495" />
+
+and by comparing both the models it is evaluated that 
+
+<img width="737" height="157" alt="image" src="https://github.com/user-attachments/assets/1095f9db-08bc-45e0-831a-0c0fb28892f2" />
+
+
+Hence, use of BERT is more effective in Sentiment analysis for IMDB dataset by StanfordNLP in comparison with the traditional Machine Learning model
